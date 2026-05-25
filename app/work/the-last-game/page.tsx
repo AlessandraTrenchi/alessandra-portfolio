@@ -28,8 +28,8 @@ function ChessPiece({ type, isBlack, x, z }) {
 
 // --- 3D COMPONENT: PROCEDURAL CHESSBOARD ---
 function ProceduralChessboard() {
-  const squares = [];
-  const pieces = [];
+  const squares: React.ReactElement[] = [];
+  const pieces: React.ReactElement[] = [];
   
   const boardSetup = [
     ['r', 'n', 'b', 'q', 'k', 'b', 'n', 'r'],
