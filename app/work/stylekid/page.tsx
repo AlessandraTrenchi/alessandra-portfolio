@@ -44,6 +44,7 @@ export default function Stylekid() {
             <a 
               href="https://www.figma.com/design/7EeDEByCRPukRfcHa7OD2M/First-Wireframes---Stylekid" 
               target="_blank" 
+              rel="noopener noreferrer"
               className="text-[10px] font-bold uppercase tracking-widest text-zinc-500 hover:text-blue-500 transition-colors"
             >
               Inspect UX Skeleton ↗
@@ -61,6 +62,7 @@ export default function Stylekid() {
             <a 
               href="https://www.figma.com/proto/NabWAZTjBxBZqo46bLZMZo/Digital-prototype--Stylekid?node-id=91-26" 
               target="_blank" 
+              rel="noopener noreferrer"
               className="text-[10px] font-bold uppercase tracking-widest text-zinc-500 hover:text-blue-500 transition-all border-b border-zinc-800 hover:border-blue-500 pb-1"
             >
               Open Full Screen ↗

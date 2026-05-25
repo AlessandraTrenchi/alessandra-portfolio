@@ -102,6 +102,7 @@ export default function TheInvitation() {
             <a 
               href="https://digitalk0nflict.wixsite.com/theinvitation" 
               target="_blank"
+              rel="noopener noreferrer"
               className="hidden md:block text-[10px] uppercase tracking-widest text-zinc-500 hover:text-blue-500 border-b border-zinc-800 hover:border-blue-500 pb-1 transition-all"
             >
               Open in New Tab ↗
@@ -132,6 +133,7 @@ export default function TheInvitation() {
                 <a 
                     href="https://digitalk0nflict.wixsite.com/theinvitation" 
                     target="_blank"
+                    rel="noopener noreferrer"
                     className="pointer-events-auto px-6 py-2 border border-zinc-700 hover:border-blue-500 text-[10px] font-bold uppercase tracking-widest text-white transition-colors bg-zinc-900/50"
                 >
                    Fullscreen ↗

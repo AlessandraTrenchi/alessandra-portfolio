@@ -62,6 +62,7 @@ export default function StelmanVR() {
             <a 
               href="/Stelman-VR-Strategy.pdf" 
               target="_blank" 
+              rel="noopener noreferrer"
               className="text-[10px] font-bold uppercase tracking-widest text-zinc-500 hover:text-blue-500 transition-all border-b border-zinc-800 hover:border-blue-500 pb-1"
             >
               Expand PDF ↗
@@ -110,6 +111,7 @@ export default function StelmanVR() {
             <a 
               href="https://www.figma.com/design/9etDHPa001QndCRh6q7s2y/marketplace-VR--Community-?node-id=0-1" 
               target="_blank" 
+              rel="noopener noreferrer"
               className="text-[10px] font-bold uppercase tracking-widest text-zinc-500 hover:text-blue-500 transition-colors"
             >
               Open in Figma ↗
@@ -134,6 +136,7 @@ export default function StelmanVR() {
             <a 
               href="/CONCEPTUALIZATION&PLANNING.pdf" 
               target="_blank" 
+              rel="noopener noreferrer"
               className="text-[10px] font-bold uppercase tracking-widest text-zinc-500 hover:text-blue-500 transition-all border-b border-zinc-800 hover:border-blue-500 pb-1"
             >
               Full Screen ↗

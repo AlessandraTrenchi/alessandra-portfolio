@@ -47,7 +47,14 @@ export default function GlobalCIT() {
           
           <div className="mt-4 flex justify-between items-center text-[10px] font-mono text-zinc-500 uppercase tracking-widest">
             <span>Development Stack: WordPress / PHP / JS / SQL</span>
-            <a href="https://globalcit.eu/country-profiles/" target="_blank" className="text-blue-500 hover:text-white transition-colors">Open in New Tab ↗</a>
+            <a
+              href="https://globalcit.eu/country-profiles/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-blue-500 hover:text-white transition-colors"
+            >
+              Open in New Tab ↗
+            </a>
           </div>
         </section>
 

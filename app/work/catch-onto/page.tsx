@@ -32,6 +32,7 @@ export default function CatchONTO() {
             <a 
               href="https://alessandratrenchi.github.io/CatchONTO/" 
               target="_blank" 
+              rel="noopener noreferrer"
               className="text-[10px] font-bold uppercase tracking-widest text-zinc-500 hover:text-blue-500 transition-all border-b border-zinc-800 hover:border-blue-500 pb-1"
             >
               Open Documentation ↗

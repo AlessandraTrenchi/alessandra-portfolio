@@ -56,7 +56,8 @@ export default function GherryPlus() {
     <div className="absolute bottom-4 right-4">
       <a 
         href="/GHERRY+.pdf" 
-        target="_blank" 
+        target="_blank"
+        rel="noopener noreferrer"
         className="bg-blue-600 text-white px-4 py-2 text-[10px] font-bold uppercase tracking-widest hover:bg-blue-500 transition-colors shadow-2xl"
       >
         Expand Full PDF ↗

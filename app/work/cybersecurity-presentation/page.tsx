@@ -33,6 +33,7 @@ export default function CybersecurityProject() {
             <a 
               href="/Cybersecurity-Presentation.pdf" 
               target="_blank" 
+              rel="noopener noreferrer"
               className="text-[10px] font-bold uppercase tracking-widest text-zinc-500 hover:text-blue-500 transition-all border-b border-zinc-800 hover:border-blue-500 pb-1"
             >
               Open Full Screen ↗

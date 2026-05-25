@@ -194,7 +194,18 @@ const PROJECTS = [
     category: ["WCAG 2.2"],
     img: "/accessibility.png",
     desc: "Software testing / QA Strategy / Compliance audits for Global Enterprise Clients.",
-    link: null,
+    link: "/work/accessibility-qa",
+    linkText: "View Case Study",
+    isNDA: true,
+  },
+  {
+    id: "23",
+    title: "TELUS — Conversation Design",
+    category: ["Conversational UX", "Team Lead"],
+    img: null,
+    desc: "Conversational design / stakeholder alignment / process improvement across distributed teams (NDA-safe).",
+    link: "/work/telus-conversational-design",
+    linkText: "View Role",
     isNDA: true,
   },
 ];
@@ -209,7 +220,23 @@ const MOODBOARDS = [
 
 // --- COMPONENTS ---
 
-const ProjectCard = ({ project, index }) => {
+type Project = {
+  id: string;
+  title: string;
+  category: string[];
+  img: string | null;
+  desc: string;
+  link: string | null;
+  linkText?: string;
+  isNDA?: boolean;
+};
+
+type ProjectCardProps = {
+  project: Project;
+  index: number;
+};
+
+const ProjectCard = ({ project, index }: ProjectCardProps) => {
   const staggerClass = index % 2 !== 0 ? "md:mt-32" : "";
   
   return (
@@ -260,7 +287,13 @@ const ProjectCard = ({ project, index }) => {
   );
 };
 
-const ServiceCard = ({ number, title, desc }) => (
+type ServiceCardProps = {
+  number: string;
+  title: string;
+  desc: string;
+};
+
+const ServiceCard = ({ number, title, desc }: ServiceCardProps) => (
   <div className="p-8 border border-white/10 hover:bg-white/5 transition-all group">
     <h4 className="font-bold uppercase tracking-widest text-blue-300 text-xs mb-4 italic">
       {number} / {title}
@@ -354,7 +387,7 @@ export default function Home() {
                         </h3>
                     </div>
                     <div className="space-y-6 text-lg text-zinc-400 font-light leading-relaxed">
-                        <p>I don't just design interfaces; I structure information. My background in <strong className="text-white font-bold">Communication & Digital Humanities</strong> allows me to see the code behind the culture.</p>
+                        <p>I  design interfaces & I structure information. My background in <strong className="text-white font-bold">Communication & Digital Humanities</strong> allows me to see the code behind the culture.</p>
                         <p>Whether it's training AI models for <strong className="text-white font-bold">Telus</strong> or ensuring accessibility for <strong className="text-white font-bold">Applause</strong>, I bring a rigorous precision to the chaotic world of tech.</p>
                     </div>
                     <div className="grid grid-cols-3 gap-8 pt-8 border-t border-zinc-900">
@@ -452,6 +485,7 @@ export default function Home() {
                 key={mood.id} 
                 href={mood.url} 
                 target="_blank" 
+                rel="noopener noreferrer"
                 className="group relative aspect-[3/4] bg-zinc-900 border border-zinc-800 overflow-hidden focus:outline-none focus:ring-2 focus:ring-blue-500 rounded-sm"
               >
                 <div className="relative w-full h-full opacity-40 group-hover:opacity-100 group-hover:scale-105 transition-all duration-700">

@@ -90,6 +90,7 @@ export default function CrossfitRedesign() {
                 <a 
                     href="https://www.figma.com/board/rGp6lcx2rr6zLPEqeUCNTI/Crossfit-wireframe-redesign-Desktop-and-Mobile?node-id=0-1&p=f&t=6ZrApQ1WebcbyfeJ-0" 
                     target="_blank"
+                    rel="noopener noreferrer"
                     className="pointer-events-auto px-6 py-2 border border-zinc-700 hover:border-blue-500 text-[10px] font-bold uppercase tracking-widest text-white transition-colors bg-zinc-900/50"
                 >
                    Open Full Board ↗

@@ -35,7 +35,7 @@ export default function ThematicWeb() {
             <a 
               href="https://ahsanv101.github.io/WebDev/index.html" 
               target="_blank" 
-              rel="noopener"
+              rel="noopener noreferrer"
               className="text-[10px] font-bold uppercase tracking-widest text-zinc-500 hover:text-blue-500 transition-all border-b border-zinc-800 hover:border-blue-500 pb-1"
             >
               Open Fullscreen ↗

@@ -419,7 +419,14 @@ export default function TheLastGame() {
                 </div>
                 <div className="flex flex-col md:flex-row justify-center gap-6 items-center">
                   <button onClick={() => window.location.reload()} className="px-8 py-3 bg-red-900/10 text-red-500 hover:text-white border border-red-900/50 text-xs uppercase tracking-widest">Restart Timeline ↺</button>
-                  <a href={result.link} target="_blank" className="px-8 py-3 bg-zinc-900 text-zinc-400 hover:text-white border border-zinc-800 text-xs uppercase tracking-widest">Examine Lore ↗</a>
+                  <a
+                    href={result.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="px-8 py-3 bg-zinc-900 text-zinc-400 hover:text-white border border-zinc-800 text-xs uppercase tracking-widest"
+                  >
+                    Examine Lore ↗
+                  </a>
                 </div>
               </div>
             )}
@@ -475,7 +482,12 @@ export default function TheLastGame() {
                         <p className="text-zinc-400 text-sm leading-relaxed mb-4">
                             The comprehensive concept deck. This document outlines the mapping of chess mechanics to Dante's theology.
                         </p>
-                        <a href="/the-last-game.pdf" target="_blank" className="inline-block px-6 py-2 bg-zinc-900 border border-zinc-700 hover:border-zinc-400 hover:text-white text-zinc-400 text-xs font-bold uppercase tracking-widest transition-colors">
+                        <a
+                          href="/the-last-game.pdf"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="inline-block px-6 py-2 bg-zinc-900 border border-zinc-700 hover:border-zinc-400 hover:text-white text-zinc-400 text-xs font-bold uppercase tracking-widest transition-colors"
+                        >
                             Open PDF Fullscreen ↗
                         </a>
                     </div>

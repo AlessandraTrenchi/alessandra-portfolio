@@ -3,15 +3,16 @@ import Link from "next/link";
 import { useState } from "react";
 
 export default function OplaAcademy() {
-  const [activeTab, setActiveTab] = useState("styleguide");
-
   // These are the exact embed links based on the Node IDs you provided
   const figmaLinks = {
     styleguide: "https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fdesign%2FDK9MB2TvzB1Q0rQ2pg6gJt%2FOpl%25C3%25A0-Academy%3Fnode-id%3D0-1",
     mockup: "https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fdesign%2FDK9MB2TvzB1Q0rQ2pg6gJt%2FOpl%25C3%25A0-Academy%3Fnode-id%3D1-3",
     wireframe: "https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fdesign%2FDK9MB2TvzB1Q0rQ2pg6gJt%2FOpl%25C3%25A0-Academy%3Fnode-id%3D140-699",
     components: "https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fdesign%2FDK9MB2TvzB1Q0rQ2pg6gJt%2FOpl%25C3%25A0-Academy%3Fnode-id%3D42-94"
-  };
+  } as const;
+
+  type TabId = keyof typeof figmaLinks;
+  const [activeTab, setActiveTab] = useState<TabId>("styleguide");
 
   return (
     <div className="min-h-screen bg-[#0a0a0a] text-zinc-100 font-sans pb-40 selection:bg-blue-500/30">
@@ -37,12 +38,14 @@ export default function OplaAcademy() {
         {/* ---------------- NAVIGATION TABS (EXACT LAYER ORDER) ---------------- */}
         <section className="mb-12 sticky top-24 z-40 bg-[#0a0a0a]/90 backdrop-blur-sm py-4 border-y border-zinc-900">
           <div className="flex flex-wrap justify-center gap-4 md:gap-10">
-            {[
-              { id: "styleguide", label: "01. Style Guide" },
-              { id: "mockup", label: "02. Hifi Wireframe - Mockup" },
-              { id: "wireframe", label: "03. Lo-fi wireframe" },
-              { id: "components", label: "04. Components" }
-            ].map((tab) => (
+            {(
+              [
+                { id: "styleguide", label: "01. Style Guide" },
+                { id: "mockup", label: "02. Hifi Wireframe - Mockup" },
+                { id: "wireframe", label: "03. Lo-fi wireframe" },
+                { id: "components", label: "04. Components" },
+              ] as const
+            ).map((tab) => (
               <button
                 key={tab.id}
                 onClick={() => setActiveTab(tab.id)}
@@ -90,6 +93,7 @@ export default function OplaAcademy() {
               <a 
                 href="https://www.figma.com/design/DK9MB2TvzB1Q0rQ2pg6gJt/Opl%C3%A0-Academy" 
                 target="_blank"
+                rel="noopener noreferrer"
                 className="px-6 py-2 border border-zinc-700 hover:border-blue-500 text-[10px] font-bold uppercase tracking-widest text-white transition-colors bg-zinc-900/50"
               >
                 Full Project ↗
